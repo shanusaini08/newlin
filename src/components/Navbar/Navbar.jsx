@@ -57,14 +57,25 @@ const Navbar = () => {
       }
     };
 
+    const adjustMargin = () => {
+      const navbar = document.querySelector('.navbar-container');
+      const nextElement = navbar.nextElementSibling;
+      if (nextElement) {
+        nextElement.style.marginTop = `${navbar.offsetHeight}px`;
+      }
+    };
+
     handleResize();
+    adjustMargin();
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', adjustMargin);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', adjustMargin);
     };
   }, []);
 
@@ -79,15 +90,14 @@ const Navbar = () => {
 
   const menuItems = [
     { text: 'Home', link: '/' },
-    { text: 'Categories', link: '/#categories' },
-    { text: 'Products', link: '/#products' },
-    { text: 'Services', link: '/services' }, // Link to the Services page
-    { text: 'About Us', link: '/about-us' }, // Link to the About Us page
-    { text: 'Contact Us', link: '/contact-us' }, // Link to the Contact Us page
+    { text: 'Products', link: '/products' },
+    { text: 'Services', link: '/services' },
+    { text: 'About Us', link: '/about-us' },
+    { text: 'Contact Us', link: '/contact-us' },
   ];
 
   return (
-    <NavbarContainer position="fixed" scroll={scroll}>
+    <NavbarContainer className="navbar-container" position="fixed" scroll={scroll}>
       <Container maxWidth="lg">
         <Toolbar>
           <NavbarTitle variant="h6">

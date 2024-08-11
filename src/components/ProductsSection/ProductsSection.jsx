@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './ProductsSection.css';
-import img1 from '../../assets/Products/1.jpeg';
-import img2 from '../../assets/Products/2.png';
-import img3 from '../../assets/Products/3.jpeg';
-import img4 from '../../assets/Products/4.jpeg';
-import img5 from '../../assets/Products/5.jpeg';
-import img6 from '../../assets/Products/6.jpeg';
-import img7 from '../../assets/Products/7.png';
-import img8 from '../../assets/Products/8.jpeg';
+import img1 from '../../assets/Products/Bedsheets.jpg';
+import img2 from '../../assets/Products/towels.webp';
+import img3 from '../../assets/Products/runners.jpg';
+import img4 from '../../assets/Products/duvets.jpg';
+import img5 from '../../assets/Products/pillows.webp';
+import img6 from '../../assets/Products/runners.jpg';
+import img7 from '../../assets/Products/covers.jpg';
+import img8 from '../../assets/Products/duvet_cover.webp';
 
 
 const products = [

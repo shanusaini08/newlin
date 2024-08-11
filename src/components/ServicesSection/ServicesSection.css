@@ -1,0 +1,86 @@
+.services-section {
+  padding: 60px 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #452041;
+  font-family: 'Glysa', 'Book Antiqua', Palatino, serif;
+}
+
+.service-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.service-card {
+  background: #ddc3dc;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+  flex-shrink: 0;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #452041;
+  margin-bottom: 10px;
+}
+
+.service-title {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.service-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-icon-title {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .service-description {
+    text-align: center;
+  }
+}

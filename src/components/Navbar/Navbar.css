@@ -1,0 +1,23 @@
+.menu-desktop {
+  display: flex;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px;
+}
+
+@media (max-width: 1024px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+}

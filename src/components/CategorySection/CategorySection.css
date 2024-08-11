@@ -1,0 +1,65 @@
+.category-section {
+  padding-top: 50px;
+  padding-bottom: 84px;
+  text-align: center;
+  background-color: white;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+}
+
+.category-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.category-card {
+  background-color: #f1e4d7CC;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1); /* Enhanced shadow for 3D effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+  width: 23%;
+  margin-bottom: 20px;
+}
+
+.category-card:hover {
+  transform: translateY(-10px); /* Increased the hover lift effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 8px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.category-image {
+  width: 100%;
+  height: auto;
+}
+
+.category-info {
+  padding: 20px;
+}
+
+.category-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .category-card {
+    width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-card {
+    width: 100%;
+  }
+
+  .category-title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,91 @@
+.about-us-page {
+  background-color: #452041;
+  color: white;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.about-us-title {
+  padding-top: 100px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-us-content, .why-us-content {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top */
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-us-text, .why-us-text {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.about-us-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-us-image {
+  flex: 1;
+  max-width: 500px;
+  text-align: center;
+  order: 2;
+}
+
+.about-us-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.why-us-section {
+  background-color: #f1e4d7CC;
+  color: #452041;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.why-us-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.why-us-section .why-us-text {
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us-content, .why-us-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-image {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .about-us-text, .why-us-text {
+    order: 2;
+    padding: 0 10px;
+  }
+
+  .about-us-title, .why-us-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-us-description, .why-us-section .why-us-text {
+    font-size: 1rem;
+  }
+}

@@ -12,7 +12,7 @@ import AboutUsPage from './pages/AboutUs/AboutUsPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/newlin">
       <div className="App">
         <Navbar />
         <Routes>

@@ -1,13 +1,13 @@
 import React from 'react';
 import './ProductsPage.css';
-import bedsheetImage from '../../assets/products/Bedsheets.jpg';
-import towelsImage from '../../assets/products/towels.webp';
-import runnersImage from '../../assets/products/runners.jpg';
-import duvetsImage from '../../assets/products/duvets.jpg';
-import pillowsImage from '../../assets/products/pillows.webp';
-import cushionsImage from '../../assets/products/cushions.webp';
-import coversImage from '../../assets/products/covers.jpg';
-import duvetCoverImage from '../../assets/products/duvet_cover.webp';
+import bedsheetImage from '../../assets/products/22.jpg';
+import towelsImage from '../../assets/products/3.jpg';
+import runnersImage from '../../assets/products/6.jpg';
+import duvetsImage from '../../assets/products/1.webp';
+import pillowsImage from '../../assets/products/3.webp';
+import cushionsImage from '../../assets/products/4.jpg';
+import coversImage from '../../assets/products/9.jpeg';
+import duvetCoverImage from '../../assets/products/7.jpeg';
 
 const products = [
   {

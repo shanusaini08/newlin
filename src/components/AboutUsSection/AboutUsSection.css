@@ -1,7 +1,8 @@
 .about-us-section {
   padding-bottom: 100px;
-  background-color: #452041;
+  background-color: hsl(306, 37%, 20%);
   color: white;
+  margin-top: -30px;
 }
 
 .about-us-content {
@@ -21,7 +22,6 @@
 }
 
 .about-us-title {
-  font-size: 2.5rem;
   margin-bottom: 30px;
 }
 

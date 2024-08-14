@@ -5,8 +5,8 @@
   text-align: center;
 }
 
-.products-title {
-  font-size: 2.5rem;
+.products-section h1{
+  
   margin-bottom: 80px;
 }
 
@@ -84,9 +84,12 @@
     min-width: 100%;
   }
 
-  .left-arrow,
+  .left-arrow{
+    top:180px;
+    left: 5px;
+  }
   .right-arrow {
-    left: 10px;
-    right: 10px;
+    top:180px;
+    right: 5px;
   }
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Box, Typography, Grid } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './FooterSection.css';
 
 const FooterSection = () => {
@@ -24,9 +24,12 @@ const FooterSection = () => {
           </Typography>
         </Box>
         <Box className="footer-social">
-          <a href="#" className="social-link"><FontAwesomeIcon icon={faFacebookF} /></a>
-          <a href="#" className="social-link"><FontAwesomeIcon icon={faTwitter} /></a>
-          <a href="#" className="social-link"><FontAwesomeIcon icon={faInstagram} /></a>
+          <a href="https://www.facebook.com/profile.php?id=100093532550214" className="social-link" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebookF} />
+          </a>
+          <a href="https://www.instagram.com/newlin_2023/" className="social-link" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
         </Box>
       </Box>
       <Box className="footer-bottom">

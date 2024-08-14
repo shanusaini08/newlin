@@ -4,6 +4,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { styled } from '@mui/system';
 import { Link, useNavigate } from 'react-router-dom';
+import logoDark from '../../assets/aboutus/logo-1.png'; // Logo for dark background
+import logoLight from '../../assets/aboutus/logo-2.png'; // Logo for light background
 import './Navbar.css';
 
 const NavbarContainer = styled(AppBar)(({ scroll }) => ({
@@ -31,7 +33,7 @@ const NavbarButton = styled(Button)({
 const Logo = styled('img')({
   marginRight: '10px',
   height: '40px',
-});
+}); // Styling for the logo
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -90,9 +92,10 @@ const Navbar = () => {
 
   const menuItems = [
     { text: 'Home', link: '/' },
-    { text: 'Products', link: '/products' },
-    { text: 'Services', link: '/services' },
     { text: 'About Us', link: '/about-us' },
+    { text: 'Services', link: '/services' },
+    { text: 'Products', link: '/products' },
+    { text: 'Gallery', link: '/gallery' },
     { text: 'Contact Us', link: '/contact-us' },
   ];
 
@@ -101,6 +104,10 @@ const Navbar = () => {
       <Container maxWidth="lg">
         <Toolbar>
           <NavbarTitle variant="h6">
+            <Logo
+              src={scroll ? logoLight : logoDark}
+              alt="Newlin Textile Logo"
+            /> {/* Conditionally render the logo */}
             NEWLIN TEXTILE
           </NavbarTitle>
           {!isMobileView && (

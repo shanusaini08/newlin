@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography, Button, IconButton, Drawer, List, ListItem
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { styled } from '@mui/system';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import logoDark from '../../assets/aboutus/logo-1.png'; // Logo for dark background
 import logoLight from '../../assets/aboutus/logo-2.png'; // Logo for light background
 import './Navbar.css';
@@ -22,13 +22,15 @@ const NavbarTitle = styled(Typography)({
   alignItems: 'center',
 });
 
-const NavbarButton = styled(Button)({
+const NavbarButton = styled(Button)(({ active, scroll }) => ({
   marginLeft: '16px',
   color: 'inherit',
+  borderBottom: active ? `2px solid ${scroll ? '#452041' : '#fff'}` : 'none',
   '&:hover': {
     backgroundColor: 'transparent',
+    borderBottom: `2px solid ${scroll ? '#452041' : '#fff'}`,
   },
-});
+}));
 
 const Logo = styled('img')({
   marginRight: '10px',
@@ -40,6 +42,7 @@ const Navbar = () => {
   const [scroll, setScroll] = useState(false);
   const [isMobileView, setIsMobileView] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -117,6 +120,8 @@ const Navbar = () => {
                   key={item.text}
                   component={Link}
                   to={item.link}
+                  scroll={scroll}
+                  active={location.pathname === item.link}
                 >
                   {item.text}
                 </NavbarButton>

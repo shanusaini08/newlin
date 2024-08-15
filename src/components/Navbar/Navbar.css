@@ -1,6 +1,7 @@
 .menu-desktop {
   display: flex;
 }
+
 .products-page {
   margin-top: 80px; /* Adjust this value according to your navbar's height */
 }

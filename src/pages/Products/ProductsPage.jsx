@@ -8,6 +8,9 @@ import pillowsImage from '../../assets/products/3.webp';
 import cushionsImage from '../../assets/products/4.jpg';
 import coversImage from '../../assets/products/9.jpeg';
 import duvetCoverImage from '../../assets/products/7.jpeg';
+import mattressProtectorImage from '../../assets/products/1.jpg';
+import bathMatImage from '../../assets/products/5.jpg';
+import curtainsImage from '../../assets/products/2.jpg';
 
 const products = [
   {
@@ -49,6 +52,21 @@ const products = [
     title: 'Duvet Covers',
     description: 'Our duvet covers come in both white and colored options, allowing you to match your style. Made from premium materials, these covers provide comfort and protect your duvet.',
     image: duvetCoverImage,
+  },
+  {
+    title: 'Mattress Protectors',
+    description: 'Protect your mattress with our high-quality mattress protectors. These protectors are waterproof and provide a comfortable layer to extend the life of your mattress.',
+    image: mattressProtectorImage,
+  },
+  {
+    title: 'Bath Mats',
+    description: 'Our bath mats are designed for safety and comfort. Made from absorbent materials, these mats are perfect for keeping your bathroom floor dry and slip-free.',
+    image: bathMatImage,
+  },
+  {
+    title: 'Curtains',
+    description: 'Enhance your home’s aesthetics with our elegant curtains. Available in various designs and sizes, these curtains provide privacy and add a stylish touch to your windows.',
+    image: curtainsImage,
   },
 ];
 

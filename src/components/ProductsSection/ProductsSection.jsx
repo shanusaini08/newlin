@@ -8,6 +8,9 @@ import img5 from '../../assets/Products/3.webp';
 import img6 from '../../assets/Products/4.jpg';
 import img7 from '../../assets/Products/9.jpeg';
 import img8 from '../../assets/Products/7.jpeg';
+import img9 from '../../assets/Products/1.jpg'; // Mattress Protector
+import img10 from '../../assets/Products/5.jpg'; // Bath Mat
+import img11 from '../../assets/Products/2.jpg'; // Curtains
 
 const products = [
   { title: 'Bedsheets', description: 'White or colored, in double and single sizes.', img: img1 },
@@ -18,6 +21,9 @@ const products = [
   { title: 'Cushions', description: 'Stylish cushions to enhance your decor.', img: img6 },
   { title: 'Pillow Covers', description: 'High-quality covers to complement your pillows.', img: img7 },
   { title: 'Duvet Covers', description: 'White and colored options to match your style.', img: img8 },
+  { title: 'Mattress Protectors', description: 'Waterproof protectors for mattress safety.', img: img9 },
+  { title: 'Bath Mats', description: 'Absorbent mats for a dry bathroom floor.', img: img10 },
+  { title: 'Curtains', description: 'Elegant curtains to enhance your space.', img: img11 },
 ];
 
 const ProductsSection = () => {
